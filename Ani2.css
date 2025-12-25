@@ -1,0 +1,300 @@
+ .logo {
+   height: 7px;
+  width: 6px;
+    
+      
+      border-radius: 1px;    
+      
+         
+      
+ }
+
+ img {
+  height: 40px;
+  width: 40px;
+  display: flex;         
+      
+      border-radius: 10px;    
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s; 
+      
+      
+ }
+
+ img:hover {
+  transform: scale(1.1); 
+      cursor: pointer;
+
+
+
+ }
+
+ .box{
+  width: 30px;           
+      height: 20px;          
+      background-color: #4CAF50; 
+      color: white;           
+      display: flex;         
+      
+      border-radius: 10px;    
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            
+      transition: transform 0.3s; 
+}
+
+.box:hover {
+      transform: scale(1.1); 
+      cursor: pointer;
+    }
+
+
+.carousel {
+
+  margin: 10px auto;
+  width: 90%;
+  border: 5px black;
+  display: flex;
+  overflow-x: auto;
+  align-content: center;
+  
+
+}
+
+.carousel::-webkit-scrollbar {
+display: none;
+}
+
+.card {
+  flex: 0 0 20em;
+  height: 20em;
+  padding: 1em;
+  border-radius: .2em;
+  align-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 15s infinite linear, glow 1.5s infinite alternate;
+  padding-right: 1em;
+ text-align: center;
+ font-display: !important;
+ font-family: times new roman;
+ color: beige;
+font-size: 20px;
+ 
+
+  
+}
+
+@keyframes spin {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+
+
+    .main{
+        width: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(21.jpg); 
+        background-position:  center;
+        background-size: cover;
+        height: 109vh;
+         }
+
+    .navbar{
+         width: 1200px;
+         height: 75px;
+         margin: auto;
+    }     
+  
+
+    
+
+
+    body{
+       
+        background: linear-gradient(to top, rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(21.jpg); 
+        
+       
+    }
+
+
+
+    @keyframes glow {
+  from {
+    text-shadow:
+      0 0 5px beige,
+      0 0 10px #ffd700;
+  }
+  to {
+    text-shadow:
+      0 0 10px beige,
+      0 0 20px #ffd700,
+      0 0 40px #ffae00;
+  }
+}
+
+
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
+
+
+.card img:hover {
+  animation-play-state: paused;
+  transform: scale(1.12);
+  box-shadow:
+    0 0 10px white,
+    0 0 25px white,
+    0 0 50px white;
+  cursor: pointer;
+}
+
+.carousel:has(.card img:hover) .group {
+  animation-play-state: paused; 
+}
+
+
+h1.glow {
+  color: beige ;
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+  animation: glow 0.5s infinite alternate;
+}
+
+p {
+
+  color: beige;
+  font-size: 20px;
+  text-align: center;
+  color: beige ;
+  
+}
+
+
+
+.menu{
+        width: 400px;
+        float: left;
+        height: 70px;
+        color: beige;
+
+        
+
+    }
+    ul{
+        float: left;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         
+
+    }
+    ul li{
+        list-style: none;
+        margin-left: 100px;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-right: 50px;
+
+    }
+    ul li a{
+        text-decoration: none;
+        color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: transform 0.4s;
+        padding: 1px;
+        color: beige ;
+  text-shadow:
+   
+    0 0 10px white,
+    0 0 20px pink;
+
+
+  
+    }
+    ul li a:hover{
+        color: whitesmoke;
+        transform: scale(1.1);
+        cursor: pointer;
+
+    }
+    
+    li a img{
+
+    height: 100px;
+    width: 100px;
+   }
+
+   li a{
+        text-decoration: none;
+        color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: transform 0.4s;
+        padding: 1px;
+        color: beige ;
+  text-shadow:
+   
+    0 0 10px white,
+    0 0 20px pink;
+    }
+
+    li{
+        list-style: none;
+        margin-left: 100px;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-right: 50px;
+      }
+
+      li{
+        float: left;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+
+
+.bc{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  background-color: #4CAF50; 
+      color: white;           
+      display: flex;         
+      align-items: center;   
+      justify-content: center; 
+      
+      margin: auto;      
+      transition: transform 0.3s;
+}
+
+
+.bc:hover {
+      transform: scale(1.1); 
+      cursor: pointer;
+    } 
+
+
+    h4{ 
+    color: beige; 
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+   }
